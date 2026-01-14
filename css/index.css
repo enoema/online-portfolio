@@ -6,10 +6,10 @@ body {
     font-family: Helvetica, Arial, sans-serif;
   }
   
-  .navbar li {
+  .navbar {
     list-style-type: none;
-    float: right;
-    
+    display: flex; 
+    justify-content: right;
   
   }
     li a:hover {
