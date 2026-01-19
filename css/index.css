@@ -1,5 +1,5 @@
 body {
-  background-image: url(/assets/images/family_1.jpg);
+  background-image: url(/assets/images/generate.png);
 }
   
 * {
@@ -10,13 +10,14 @@ body {
     list-style-type: none;
     display: flex; 
     justify-content: right;
+    
   
   }
-    li a:hover {
+    .navbar .listclass a:hover {
       color: white;
     }
         
-    li a {
+    .navbar .listclass a {
     background-color: black;
     padding: 16px 18px;
     display: block;
@@ -65,7 +66,7 @@ body {
 
 
   }
-.footerIcon1{
+.footerIcon1 {
   display: inline-block;
   border-radius: 70px;
   width: 5px;
