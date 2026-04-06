@@ -28,15 +28,26 @@ section {
   box-sizing: border-box;
   min-height: fit-content;
 }
+.search-btn {
+  display: block;
+}
 .div-author {
   display: inline-block;
+  width: 359px;
+  vertical-align: top;
+  margin-right: 15px;
 }
 .enojos {
   width: 360px;
   margin-right: 12px;
 }
+.row {
+  margin-top: 20px;
+}
 .eno-channel {
   display: inline-block;
+  width: 90px;
+  vertical-align: top;
 
 }
 .channel-img {
@@ -47,6 +58,7 @@ section {
   display: inline-block;
   margin-bottom: 10px;
   line-height: 10px;
+  width: 210px;
 }
 .video-author, .video-stats {
   font-family: Dubai, Arial;
@@ -54,26 +66,27 @@ section {
 }
 .video-title {
   display: block;
-  width: 360px;
+  width: 250px;
   line-height: 18px;
   font-weight: 700;
+  margin-top: 0;
+}
+.emu {
+  width: 268px;
 }
 
 .temi {
-  width: 360px;
+  width: 200px;
 }
-.emu{
-  width: 300px;
-  margin-right: 12px;
-  vertical-align: auto;
-}
-.emu-channel {
+.channel-info {
   display: inline-block;
-  vertical-align: auto;
-  
+  margin-bottom: 10px;
+  line-height: 10px;
+  width: 210px;
 }
-.search-btn {
-  display: block;
+.pastork {
+  width: 300px;
+  display: inline;
 }
 .artfont {
   font-family: Dubai;
@@ -86,11 +99,24 @@ section {
   color: red;
   font-size: 12px;
 }
+.united-family {
+  float: left;
+  width: 150px;
+  margin-right: 10px;
+  margin-top: 10px;
+}
 p {
   text-align: justify;
 }
 p, li {
   font-size: 18px;
+}
+.about-image {
+  background-image: url(/assets/images/growing.jpg);
+  background-repeat: no-repeat;
+  background-position: fixed;
+  background-size: cover;
+  color: white;
 }
 a:visited {
   color: green;
@@ -110,14 +136,17 @@ ul,li {
   font-weight: normal;
 }
 .footerIcon {
-  display: inline-block;
-  border-radius: 50px;
-  width: 5px;
+  display: inline;
 }
 .footerIcon1 {
-  display: inline-block;
-  border-radius: 70px;
-  width: 5px;
+  display: inline;
+}
+.twit {
+  width: 100px;
+  margin: 5px;
+}
+.facebk {
+  width: 150px;
 }
 body {
   border-radius: 80px;
