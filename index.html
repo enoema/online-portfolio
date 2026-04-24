@@ -1,136 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio website of Emmanuel Joshua, Fullstack Developer" />
     <title>Portfolio</title>
     <link href="/css/index.css" type="text/css" rel="stylesheet">
-</head>
-<body>
-  <nav id="logo">
-    <div class="author">
-    Emmanuel Joshua
-    </div>
+    <link rel="icon" href="/assets/images/favicon-32x32.png" type="image/png" sizes="32x32"/>
+    <link rel="icon" href="/assets/images/favicon-16x16.png" type="image/png" sizes="16x16"/>
+  </head>
+  <body>
+    <header>
+      <nav class="pri-nav">
+        <div class="author">
+          Emmanuel Joshua
+        </div>
+        <div>
+          <ul class="nav-links">
+            <li class="listclass"><a href="/index.html">Home</a></li>
+            <li class="listclass"><a href="/about.html">About</a></li>
+            <li class="listclass"><a href="/projects.html">Project</a></li>
+            <li class="listclass"><a href="/contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    
+    <section id="profile">
+      <div class="profile_container">
+        <img src="./assets/images/emuma.JPG" alt="Emma profile picture" height="100" width="100"/>
+      </div>
+      <div class="section_para">
+        <p class="para">
+          Hello, I'm
+        </p>
+        <h1 class="text"> 
+          Emmanuel Joshua 
+        </h1>
+        <p class="para1">
+          Fullstack Developer
+        </p>
+      </div>
+      <div class="btn">
+        <button class="download_button" onclick="window.open('./assets/Resume')">Download CV</button>
+        <button class="contact_button" onclick="location.href='/contact.html'">Contact Info</button>
+      </div>
+    
+    </section>
+    <p>
+      I'm learning to code on Codecademy! My goals include:
+    </p>
+      
+    <ul>
+      <li>Learn to code.</li>
+      <li>Teach the young coding.</li>
+      <li>Start a company.</li>
+      <li>Help the world.</li>
+    </ul>
+    <dl>
+      <dt>
+        HTML
+      </dt>
+      <dd>HyperText Markup Language</dd>
+      <dt>CSS</dt>
+      <dd>Cascading Style Sheets</dd>
+      <dt>JS</dt>
+      <dd>JavaScript</dd>
+    </dl>
+    <p>
+      <abbr title="HyperText Markup Language">HTML</abbr> is the foundation of the web. If you want to be a good developer, it is the first langauage to learn.
+    </p>
+    <h1>Emumaro Emmanuel Joshua</h1>
+    <!--name of candidate-->
+
+    <h2>Education</h2>
+    <h3>School name</h3>
+    <h4>Course Studied</h4>
+    <ul>
+      <li>Year of Attendance</li>
+      <li>Date</li>
+    </ul>
+    <!--candidate school attended-->
+    <h2>Experience</h2>
+    <h3>Company Name</h3>
+    <h4>Title</h4>
+    <h4>Date</h4>
+    <ul>
+      <li>Build and supervised data migration</li>
+      <li>Installed and configured Window Server 2008</li>
+    </ul>
+    <!--candidate work experience-->
+    <h2>Social Media</h2>
+    <ul class="links">
+      <li><a href="https://www.twitter.com/@emuoputa">Twitter</a></li>
+      <li><a href="https://www.facebook.com/emuoputa">Facebook</a></li>
+      <li><a href="https://www.linkedin.com/@emuoputa">LinkedIn</a></li>
+      <li><a href="https://www.instagram.com/@emuoputa">Instagram</a></li>
+    </ul>
+    <!--my email address-->
+
+    <h2>Contact</h2>
+    <p>
+      You can also specify time using the time element as this: <time datetime="15:00">15:00</time> 
+    </p>
+    <p>
+      To set the text color to blue in CSS, use the following code:
+      <code>color: blue;</code>
+    </p>
+    <a href="mailto:emuoputa@gmail.com">My email</a>
+    <p>
+      This is one of my favorite websites: <a href="https://www.google.com/" target="_blank">Google</a>
+    </p>
     <div>
-      <ul class="nav-links">
-        <li class="listclass"><a href="/index.html">Home</a></li>
-        <li class="listclass"><a href="/about.html">About</a></li>
-        <li class="listclass"><a href="/projects.html">Project</a></li>
-        <li class="listclass"><a href="/contact.html">Contact</a></li>
-      </ul>
+      <p>
+        Thank you for visiting our site. We like being in touch. Please leave your contact
+      </p>
+      <fieldset>
+        <form action="/index.html" method="POST"    class='contactForm'>
+          <label for="Name">FirstName:</label>
+          <input type="text" name="name">
+          <br>
+          <br>
+          <label for="name">LastName:</label>
+          <input type="text" name="name">
+          <br>
+          <br>
+          <label for="telephone">Telephone:</label>
+          <input type="number" name="phone" id="Telephone">
+        </form>
+        <button type="submit">Submit Here</button>
+      </fieldset> 
     </div>
-  </nav>
-  <section id="profile">
-    <div class="profile_container">
-      <img src="./assets/images/author.jpg" alt="Emma profile picture" height="100" width="100"/>
-    </div>
-    <div class="section_para">
-      <p class="para">Hello, I'm</p>
-      <h1 class="text"> Emmanuel Joshua </h1>
-      <p class="para1">Fullstack Developer</p>
-    </div>
-    <div class="btn">
-      <button class="download_button" onclick="window.open('./assets/Resume')">Download CV</button>
-      <button class="contact_button" onclick="location.href='/contact.html'">Contact Info</button>
-    </div>
-   
-  </section>
-<p>I'm learning to code on Codecademy! My goals include:</p>
-   
-<ul>
-  <li>Learn to code.</li>
-  <li>Teach the young coding.</li>
-  <li>Start a company.</li>
-  <li>Help the world.</li>
-</ul>
-<dl>
-  <dt>
-    HTML
-  </dt>
-  <dd>HyperText Markup Language</dd>
-  <dt>CSS</dt>
-  <dd>Cascading Style Sheets</dd>
-  <dt>JS</dt>
-  <dd>JavaScript</dd>
-</dl>
-<p>
-  <abbr title="HyperText Markup Language">HTML</abbr> is the foundation of the web. If you want to be a good developer, it is the first langauage to learn.
-</p>
-<h1>Emumaro Emmanuel Joshua</h1>
-<!--name of candidate-->
+    <div class="contact_info">
+      <footer>
+          <address>
+            <p class="contact-info">
+              Contact: 68 Earls Barton, Northampton,
+            <p class="contact-info">
+              Contact: 68 Earls Bar>
+              <a href="tel: +44 7867253804">+44 7867253804</a>
+            </p>
+            <p class="contact-info">
+              Contact: 68 Earls Bar>
+              <a href="mailto:emuoputa@gmail.com">emuoputa@gmail.com</a>
+            </p>
+          </address>
+          <div class="footerIcon">
+            <img class="icon" src="/assets/images/twitterlo.png" alt="twitter logo">
 
-<h2>Education</h2>
-<h3>School name</h3>
-<h4>Course Studied</h4>
-<ul>
-  <li>Year of Attendance</li>
-  <li>Date</li>
-</ul>
-<!--candidate school attended-->
-<h2>Experience</h2>
-<h3>Company Name</h3>
-<h4>Title</h4>
-<h4>Date</h4>
-<ul>
-  <li>Build and supervised data migration</li>
-  <li>Installed and configured Window Server 2008</li>
-</ul>
-<!--candidate work experience-->
-<h2>Social Media</h2>
-<ul>
-  <li><a href="https://www.twitter.com/@emuoputa">Twitter</a></li>
-  <li><a href="https://www.facebook.com/emuoputa">Facebook</a></li>
-  <li><a href="https://www.linkedin.com/@emuoputa">LinkedIn</a></li>
-  <li><a href="https://www.instagram.com/@emuoputa">Instagram</a></li>
-</ul>
-<!--my email address-->
-
-<h2>Contact</h2>
-<p>You can also specify time using the time element as this: <time datetime="15:00">15:00</time> </p>
-<p>
-  To set the text color to blue in CSS, use the following code:
-  <code>color: blue;</code>
-</p>
-<a href="mailto:emuoputa@gmail.com">My email</a>
-<p>This is one of my favorite websites: <a href="https://www.google.com/" target="_blank">Google</a></p>
-<div>
-  <p>Thank you for visiting our site. We like being in touch. Please leave your contact</p>
-  <fieldset>
-  <form action="/index.html" method="POST" class='contactForm'>
-      <label for="Name">FirstName:</label>
-      <input type="text" name="name">
-      <br>
-      <br>
-      <label for="name">LastName:</label>
-      <input type="text" name="name">
-      <br>
-      <br>
-      <label for="telephone">Telephone:</label>
-      <input type="number" name="phone" id="Telephone">
-    </form>
-    <button type="submit">Submit Here</button>
-   </fieldset> 
-   </div>
-
-
-<div class="contact_info">
-  <footer>
-    <address>
-    <p class="contact-info">contact: 68 Earls Barton, Northampton,
-    <p><a href="tel: +44 7867253804">+44 7867253804</a></p>
-    <p><a href="mailto:emuoputa@gmail.com">emuoputa@gmail.com</a></p>
-    </address>
-    <div class="footerIcon">
-      <img class="twit" src="/assets/images/twitterlo.png" alt="twitter logo">
-
-    </div>
-    <div class="footerIcon1">
-      <img class="facebk" src="/assets/images/facebk.webp" alt="facebook logo">
-
-    </div>
-  </footer>
-</div>
-<script src="script.js"></script>
-</body>
-
+            <img class="icon" src="/assets/images/facebk.webp" alt="facebook logo">
+          </div>
+        </footer>
+      </div>
+      <script src="script.js">
+          
+      </script>
+  </body>
 </html>

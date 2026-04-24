@@ -1,7 +1,9 @@
-nav, .nav-links {
+pri-nav, .nav-links {
   display: flex;
+  padding: 0;
+  margin: 0;
 }
-nav {
+.pri-nav {
   justify-content: space-around;
   height: 17vh;
   align-items: center;
@@ -11,15 +13,12 @@ nav {
   list-style-type: none;
   justify-content: right;
 }
-.nav-links .listclass a:hover {
-  color: white;
-}
-    
-.nav-links .listclass a {
-  background-color: black;
+.pri-nav a {
   padding: 16px 18px;
   display: block;
   text-decoration: none;
+  font-weight: bold;
+  color: black;
 }  
 section {
   padding-top: 4vh;
@@ -27,9 +26,14 @@ section {
   margin: 0 10rem;
   box-sizing: border-box;
   min-height: fit-content;
+  gap: 30px;
 }
 .search-btn {
   display: block;
+}
+.author {
+  text-align: center;
+  font-size: 3rem;
 }
 .div-author {
   display: inline-block;
@@ -65,7 +69,7 @@ section {
   font-size: 12px;
 }
 .video-title {
-  display: block;
+  display: inline-block;
   width: 250px;
   line-height: 18px;
   font-weight: 700;
@@ -108,6 +112,13 @@ section {
 p {
   text-align: justify;
 }
+.links {
+  list-style-type: none;
+}
+.links li a {
+  text-decoration: none;
+  color: hsla(0, 0%, 0%, 90)
+}
 p, li {
   font-size: 18px;
 }
@@ -121,7 +132,7 @@ p, li {
 a:visited {
   color: green;
 }
-a:link {
+a:links {
   color: green;
 }
 a:hover {
@@ -136,17 +147,14 @@ ul,li {
   font-weight: normal;
 }
 .footerIcon {
-  display: inline;
+  display: flex;
+  justify-content: left;
+  margin-top: 1rem;
+  gap: 1rem;
 }
-.footerIcon1 {
-  display: inline;
-}
-.twit {
-  width: 100px;
-  margin: 5px;
-}
-.facebk {
-  width: 150px;
+.icon {
+  cursor: pointer;
+  height: 5rem;
 }
 body {
   border-radius: 80px;
