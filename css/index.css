@@ -1,167 +1,107 @@
-pri-nav, .nav-links {
-  display: flex;
-  padding: 0;
-  margin: 0;
+* {
+  text-decoration: none;
 }
-.pri-nav {
-  justify-content: space-around;
-  height: 17vh;
+.navbar{
+  background-color:rgb(226, 206, 188);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.navdir{
+  display:flex;
   align-items: center;
+  justify-content: space-between;
 }
-
-.nav-links {
-  list-style-type: none;
-  justify-content: right;
-}
-.pri-nav a {
-  padding: 16px 18px;
-  display: block;
-  text-decoration: none;
+.logo a{
+  font-size: 30px;
   font-weight: bold;
-  color: black;
-}  
-section {
-  padding-top: 4vh;
-  height: 96vh;
-  margin: 0 10rem;
-  box-sizing: border-box;
-  min-height: fit-content;
-  gap: 30px;
+  color: rgb(5, 5, 96);
+  cursor: pointer;
 }
-.search-btn {
-  display: block;
+.logo a:hover{
+  color: rgb(69, 69, 186);
+  transform: scale(1.05);
 }
-.author {
-  text-align: center;
-  font-size: 3rem;
-}
-.div-author {
-  display: inline-block;
-  width: 359px;
-  vertical-align: top;
-  margin-right: 15px;
-}
-.enojos {
-  width: 360px;
-  margin-right: 12px;
-}
-.row {
-  margin-top: 20px;
-}
-.eno-channel {
-  display: inline-block;
-  width: 90px;
-  vertical-align: top;
-
-}
-.channel-img {
-  border-radius: 50px;
-  
-}
-.eno-info {
-  display: inline-block;
-  margin-bottom: 10px;
-  line-height: 10px;
-  width: 210px;
-}
-.video-author, .video-stats {
-  font-family: Dubai, Arial;
-  font-size: 12px;
-}
-.video-title {
-  display: inline-block;
-  width: 250px;
-  line-height: 18px;
-  font-weight: 700;
-  margin-top: 0;
-}
-.emu {
-  width: 268px;
-}
-
-.temi {
-  width: 200px;
-}
-.channel-info {
-  display: inline-block;
-  margin-bottom: 10px;
-  line-height: 10px;
-  width: 210px;
-}
-.pastork {
-  width: 300px;
-  display: inline;
-}
-.artfont {
-  font-family: Dubai;
-}
-.hide {
+.menu-icon{
+  font-size: 2.5rem;
   display: none;
+  cursor: pointer;
+  margin-left: 100px;
 }
-.John:hover +.hide {
-  display: block;
-  color: red;
-  font-size: 12px;
+li{
+  list-style: none;
+  display: inline-block;
 }
-.united-family {
-  float: left;
-  width: 150px;
-  margin-right: 10px;
-  margin-top: 10px;
+li a{
+  font-size: 18px;
+  font-weight: bold;
+  margin-right: 25px;
+  color: rgb(18, 17, 17);
 }
-p {
-  text-align: justify;
+li a:hover{
+  color: rgba(255, 255, 255, 0.562);
+  transform: scale(1.05);
 }
-.links {
-  list-style-type: none;
+.profile{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
 }
-.links li a {
-  text-decoration: none;
-  color: hsla(0, 0%, 0%, 90)
+.profile_image img{
+  width: 100px;
+  border-radius: 50%;
+  cursor: pointer;
 }
-p, li {
+.profile_info{
+  margin-left: 15px;
+}
+.profile_para{
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+button{
+  background-color: black;
+  color: white;
+  padding: 10px;
+  width: 80px;
+  border-radius: 10px;
+}
+button a{
+  color: white;
+  font-weight: bold;
   font-size: 18px;
 }
-.about-image {
-  background-image: url(/assets/images/growing.jpg);
-  background-repeat: no-repeat;
-  background-position: fixed;
-  background-size: cover;
-  color: white;
-}
-a:visited {
-  color: green;
-}
-a:links {
-  color: green;
-}
-a:hover {
-  background-color: yellow;
-}
-.contactForm {
-  font-style: italic;
-  font-family:Arial, Helvetica, sans-serif;
-  position: relative;
-}
-ul,li {
-  font-weight: normal;
-}
-.footerIcon {
-  display: flex;
-  justify-content: left;
-  margin-top: 1rem;
-  gap: 1rem;
-}
-.icon {
+.download-button,.contact-button{
+  display: inline-block;
+  padding: 2px 3px;
+  border-radius: 15px;
+  blackground-color: black;
   cursor: pointer;
-  height: 5rem;
+  letter-spacing: 0.1rem;
+  font-size: 12px;
+  font-weight: 400;
 }
-body {
-  border-radius: 80px;
+
+.footer_social img{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  width: 42px;
+  height: 42px;
+  margin: 1rem 1rem 1rem 0;
+  border-radius: 50%;
+  background: transparent;
+  cursor: pointer;
 }
-/* media query */
-@media (max-width: 800px) {
-  #image-container {
-  flex-direction: column;
+.footer_social img:hover{
+  background: rgb(11, 17, 82);
+  transform: scale(1.1);
+  box-shadow: 0 0 5px rgb(11, 17, 82);
 }
+.united-family{
+  width: 250px;
+  display: flex;
 }
